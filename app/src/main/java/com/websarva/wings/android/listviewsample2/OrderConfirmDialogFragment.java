@@ -1,4 +1,4 @@
-package jp.hotmix.listviewsample2;
+package com.websarva.wings.android.listviewsample2;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -21,8 +21,8 @@ public class OrderConfirmDialogFragment extends DialogFragment {
         builder.setNeutralButton(R.string.dialog_btn_nu, new DialogButtonClickListener());
 
 
-        AlertDialog alert = builder.create();
-        return alert;
+        AlertDialog dialog = builder.create();
+        return dialog;
     }
 
     private class DialogButtonClickListener implements DialogInterface.OnClickListener {
